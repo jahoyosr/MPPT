@@ -1,0 +1,13 @@
+--cpu Cortex-M3
+".\objects\main_user.o"
+".\objects\table_cosinus_tri.o"
+".\objects\toolbox_nrj_v4.o"
+".\objects\mppt.o"
+".\objects\clock.o"
+".\Pilotes\Drivers_STM32F103_107_Juin2017a.lib"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+--library_type=microlib --strict --scatter ".\Objects\Pilote_Controleur_Puissance.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Pilote_Controleur_Puissance.map" -o .\Objects\Pilote_Controleur_Puissance.axf
